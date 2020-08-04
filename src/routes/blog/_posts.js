@@ -16,12 +16,11 @@ const posts = fs.readdirSync(POST_PATH).map(postFilename => {
   return {
     title: postTitle,
     slug: kebabCase(postTitle),
-    html: marked(postFrontMatter.body)
+    html: marked(postFrontMatter.body),
+    number: postFrontMatter.attributes.number
   };
 });
 
-posts.forEach(post => {
-  post.html = post.html.replace(/^\t{3}/gm, '');
-});
-
-export default posts;
+export default posts
+  .map(post => ({ ...post, html: post.html.replace(/^\t{3}/gm, '') }))
+  .sort((a, b) => a.number - b.number);
