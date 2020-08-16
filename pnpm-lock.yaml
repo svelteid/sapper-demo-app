@@ -23,7 +23,7 @@ devDependencies:
   rollup: 2.23.0
   rollup-plugin-svelte: 5.2.3_rollup@2.23.0+svelte@3.24.0
   rollup-plugin-terser: 5.3.0_rollup@2.23.0
-  sapper: 0.27.16_svelte@3.24.0
+  sapper: 0.28.0_svelte@3.24.0
   svelte: 3.24.0
   svelte-moveable: 0.9.3
   svelte-preprocess: 4.0.10_c7b7d3e7b73390621e6ac7d1fbf55102
@@ -2940,7 +2940,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /sapper/0.27.16_svelte@3.24.0:
+  /sapper/0.28.0_svelte@3.24.0:
     dependencies:
       html-minifier: 4.0.0
       http-link-header: 1.0.2
@@ -2951,9 +2951,9 @@ packages:
     dev: true
     hasBin: true
     peerDependencies:
-      svelte: ^3.5.0
+      svelte: ^3.17.3
     resolution:
-      integrity: sha512-q8dohkbhga6xO+0a8h84odFyoilQ0D0vJtF8NHra/DQmSeN2R2MXUfwhw3EyvLms3T1x8H3v+qw642Qf5JXA9g==
+      integrity: sha512-t5Qwaad4Zq0HFHqGVV5iw3M22B3cvczxyBzUJiQyMWuL2KY1wDi+6DslEEkpdfrOPejdphj2z4oVpE4X8iOc5w==
   /sass-graph/2.2.5:
     dependencies:
       glob: 7.1.6
@@ -3524,7 +3524,7 @@ specifiers:
   rollup: ^2.3.4
   rollup-plugin-svelte: ^5.0.1
   rollup-plugin-terser: ^5.3.0
-  sapper: ^0.27.0
+  sapper: ^0.28.0
   sirv: ^1.0.0
   svelte: ^3.0.0
   svelte-moveable: 0.9.3
