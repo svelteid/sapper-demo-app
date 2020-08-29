@@ -1,10 +1,10 @@
 <script context="module">
   export async function preload(_, session) {
-    if (session.isAuth) {
-      return { user: session.user };
-    } else {
-      this.error(401, 'Unauthorized');
+    if (!session.isAuth) {
+      return this.redirect(302, '/');
     }
+
+    return { user: session.user };
   }
 </script>
 
